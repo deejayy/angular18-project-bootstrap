@@ -2,7 +2,9 @@
   <mat-tab label="Introduction" i18n-label="@@demo/demo/introduction">
     <div class="tab-content">
       <p i18n="@@demo/demo/intro-line-1">This is the demo page for the Angular Bootstrap application.</p>
-      <p i18n="@@demo/demo/intro-line-2">In the tabs, you can check how the embedded features are working. Check the code for reference implementation.</p>
+      <p i18n="@@demo/demo/intro-line-2">
+        In the tabs, you can check how the embedded features are working. Check the code for reference implementation.
+      </p>
       <p i18n="@@demo/demo/intro-line-3">
         To remove this page, simply delete /app/feature/demo folder completely and remove the DEMO_ROUTES reference from
         app-routing.module.ts.
@@ -22,48 +24,48 @@
       <section>
         <div class="example-label">Basic</div>
         <div class="example-button-row">
-          <button mat-button>Basic</button>
-          <button color="primary" mat-button>Primary</button>
-          <button color="accent" mat-button>Accent</button>
-          <button color="warn" mat-button>Warn</button>
-          <button disabled mat-button>Disabled</button>
-          <a href="https://cv.co.hu/" mat-button target="_blank">Link</a>
+          <button mat-button class="primary">Primary</button>
+          <button mat-button class="secondary">Secondary</button>
+          <button mat-button class="tertiary">Tertiary</button>
+          <button mat-button class="error">Error</button>
+          <button mat-button disabled>Disabled</button>
+          <a mat-button href="https://cv.co.hu/" target="_blank">Link</a>
         </div>
       </section>
       <mat-divider></mat-divider>
       <section>
         <div class="example-label">Raised</div>
         <div class="example-button-row">
-          <button mat-raised-button>Basic</button>
-          <button color="primary" mat-raised-button>Primary</button>
-          <button color="accent" mat-raised-button>Accent</button>
-          <button color="warn" mat-raised-button>Warn</button>
-          <button disabled mat-raised-button>Disabled</button>
-          <a href="https://cv.co.hu/" mat-raised-button target="_blank">Link</a>
+          <button mat-raised-button class="primary">Primary</button>
+          <button mat-raised-button class="secondary">Secondary</button>
+          <button mat-raised-button class="tertiary">Tertiary</button>
+          <button mat-raised-button class="error">Error</button>
+          <button mat-raised-button disabled>Disabled</button>
+          <a mat-raised-button href="https://cv.co.hu/" target="_blank">Link</a>
         </div>
       </section>
       <mat-divider></mat-divider>
       <section>
         <div class="example-label">Stroked</div>
         <div class="example-button-row">
-          <button mat-stroked-button>Basic</button>
-          <button color="primary" mat-stroked-button>Primary</button>
-          <button color="accent" mat-stroked-button>Accent</button>
-          <button color="warn" mat-stroked-button>Warn</button>
-          <button disabled mat-stroked-button>Disabled</button>
-          <a href="https://cv.co.hu/" mat-stroked-button target="_blank">Link</a>
+          <button mat-stroked-button class="primary">Primary</button>
+          <button mat-stroked-button class="secondary">Secondary</button>
+          <button mat-stroked-button class="tertiary">Tertiary</button>
+          <button mat-stroked-button class="error">Error</button>
+          <button mat-stroked-button disabled>Disabled</button>
+          <a mat-stroked-button href="https://cv.co.hu/" target="_blank">Link</a>
         </div>
       </section>
       <mat-divider></mat-divider>
       <section>
         <div class="example-label">Flat</div>
         <div class="example-button-row">
-          <button mat-flat-button>Basic</button>
-          <button color="primary" mat-flat-button>Primary</button>
-          <button color="accent" mat-flat-button>Accent</button>
-          <button color="warn" mat-flat-button>Warn</button>
-          <button disabled mat-flat-button>Disabled</button>
-          <a href="https://cv.co.hu/" mat-flat-button target="_blank">Link</a>
+          <button mat-flat-button class="primary">Primary</button>
+          <button mat-flat-button class="secondary">Secondary</button>
+          <button mat-flat-button class="tertiary">Tertiary</button>
+          <button mat-flat-button class="error">Error</button>
+          <button mat-flat-button disabled>Disabled</button>
+          <a mat-flat-button href="https://cv.co.hu/" target="_blank">Link</a>
         </div>
       </section>
       <mat-divider></mat-divider>
@@ -71,21 +73,11 @@
         <div class="example-label">Icon</div>
         <div class="example-button-row">
           <div class="example-flex-container">
-            <button aria-label="Example icon button with a vertical three dot icon" mat-icon-button>
-              <mat-icon>more_vert</mat-icon>
-            </button>
-            <button aria-label="Example icon button with a home icon" color="primary" mat-icon-button>
-              <mat-icon>home</mat-icon>
-            </button>
-            <button aria-label="Example icon button with a menu icon" color="accent" mat-icon-button>
-              <mat-icon>menu</mat-icon>
-            </button>
-            <button aria-label="Example icon button with a heart icon" color="warn" mat-icon-button>
-              <mat-icon>favorite</mat-icon>
-            </button>
-            <button aria-label="Example icon button with a open in new tab icon" disabled mat-icon-button>
-              <mat-icon>open_in_new</mat-icon>
-            </button>
+            <button mat-icon-button class="primary" aria-label="Example icon button with a vertical three dot icon"><mat-icon>more_vert</mat-icon></button>
+            <button mat-icon-button class="secondary" aria-label="Example icon button with a vertical three dot icon"><mat-icon>more_vert</mat-icon></button>
+            <button mat-icon-button class="tertiary" aria-label="Example icon button with a vertical three dot icon"><mat-icon>more_vert</mat-icon></button>
+            <button mat-icon-button class="error" aria-label="Example icon button with a vertical three dot icon"><mat-icon>more_vert</mat-icon></button>
+            <button mat-icon-button disabled aria-label="Example icon button with a open in new tab icon"><mat-icon>open_in_new</mat-icon></button>
           </div>
         </div>
       </section>
@@ -95,24 +87,13 @@
         <div class="example-button-row">
           <div class="example-flex-container">
             <div class="example-button-container">
-              <button aria-label="Example icon button with a delete icon" color="primary" mat-fab>
-                <mat-icon>delete</mat-icon>
-              </button>
+              <button mat-fab class="primary" aria-label="Example icon button with a delete icon"><mat-icon>delete</mat-icon></button>
+              <button mat-fab class="secondary" aria-label="Example icon button with a delete icon"><mat-icon>delete</mat-icon></button>
+              <button mat-fab class="tertiary" aria-label="Example icon button with a delete icon"><mat-icon>delete</mat-icon></button>
+              <button mat-fab class="error" aria-label="Example icon button with a delete icon"><mat-icon>delete</mat-icon></button>
             </div>
             <div class="example-button-container">
-              <button aria-label="Example icon button with a bookmark icon" color="accent" mat-fab>
-                <mat-icon>bookmark</mat-icon>
-              </button>
-            </div>
-            <div class="example-button-container">
-              <button aria-label="Example icon button with a home icon" color="warn" mat-fab>
-                <mat-icon>home</mat-icon>
-              </button>
-            </div>
-            <div class="example-button-container">
-              <button aria-label="Example icon button with a heart icon" disabled mat-fab>
-                <mat-icon>favorite</mat-icon>
-              </button>
+              <button mat-fab disabled aria-label="Example icon button with a heart icon"><mat-icon>favorite</mat-icon></button>
             </div>
           </div>
         </div>
@@ -123,24 +104,35 @@
         <div class="example-button-row">
           <div class="example-flex-container">
             <div class="example-button-container">
-              <button aria-label="Example icon button with a menu icon" color="primary" mat-mini-fab>
-                <mat-icon>menu</mat-icon>
-              </button>
+              <button mat-mini-fab class="primary" aria-label="Example icon button with a menu icon"><mat-icon>menu</mat-icon></button>
+              <button mat-mini-fab class="secondary" aria-label="Example icon button with a menu icon"><mat-icon>menu</mat-icon></button>
+              <button mat-mini-fab class="tertiary" aria-label="Example icon button with a menu icon"><mat-icon>menu</mat-icon></button>
+              <button mat-mini-fab class="error" aria-label="Example icon button with a menu icon"><mat-icon>menu</mat-icon></button>
             </div>
             <div class="example-button-container">
-              <button aria-label="Example icon button with a plus one icon" color="accent" mat-mini-fab>
-                <mat-icon>plus_one</mat-icon>
-              </button>
+              <button mat-mini-fab disabled aria-label="Example icon button with a home icon"><mat-icon>home</mat-icon></button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="example-label">Extended Fab</div>
+        <div class="example-button-row">
+          <div class="example-flex-container">
+            <div class="example-button-container">
+              <button mat-fab extended class="primary"><mat-icon>favorite</mat-icon>Basic</button>
+              <button mat-fab extended class="secondary"><mat-icon>favorite</mat-icon>Basic</button>
+              <button mat-fab extended class="tertiary"><mat-icon>favorite</mat-icon>Basic</button>
+              <button mat-fab extended class="error"><mat-icon>favorite</mat-icon>Basic</button>
             </div>
             <div class="example-button-container">
-              <button aria-label="Example icon button with a filter list icon" color="warn" mat-mini-fab>
-                <mat-icon>filter_list</mat-icon>
-              </button>
+              <button mat-fab extended disabled><mat-icon>favorite</mat-icon>Disabled</button>
             </div>
             <div class="example-button-container">
-              <button aria-label="Example icon button with a home icon" disabled mat-mini-fab>
-                <mat-icon>home</mat-icon>
-              </button>
+              <a mat-fab extended routerLink="." class="primary"><mat-icon>favorite</mat-icon>Link</a>
+              <a mat-fab extended routerLink="." class="secondary"><mat-icon>favorite</mat-icon>Link</a>
+              <a mat-fab extended routerLink="." class="tertiary"><mat-icon>favorite</mat-icon>Link</a>
+              <a mat-fab extended routerLink="." class="error"><mat-icon>favorite</mat-icon>Link</a>
             </div>
           </div>
         </div>
@@ -208,7 +200,8 @@
       <button color="primary" mat-flat-button (click)="switchLang('hu-HU')">Switch to Hungarian (hu-HU)</button>
       <button mat-flat-button (click)="switchLang('en-US')">Switch to English (en-US)</button>
       <p i18n="@@deliberately-missing-token">
-        This is a deliberately missing languge token, check dev console to observe what you can expect when a token is missing (e.g. typo, forget, etc).
+        This is a deliberately missing languge token, check dev console to observe what you can expect when a token is missing (e.g. typo,
+        forget, etc).
       </p>
       <p>{{ codeLangToken }}</p>
     </div>

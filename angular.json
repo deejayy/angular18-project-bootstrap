@@ -36,11 +36,18 @@
             ],
             "styles": [
               {
-                "input": "src/styles/material-theme.scss",
-                "bundleName": "material"
+                "input": "src/styles/material-dark.scss",
+                "inject": false,
+                "bundleName": "material-dark"
+              },
+              {
+                "input": "src/styles/material-light.scss",
+                "inject": false,
+                "bundleName": "material-light"
               },
               {
                 "input": "src/styles/styles.scss",
+                "inject": false,
                 "bundleName": "styles"
               }
             ],
@@ -69,7 +76,14 @@
                   "with": "src/environments/environment.prod.ts"
                 }
               ],
-              "outputHashing": "all"
+              "namedChunks": true,
+              "outputHashing": "all",
+              "optimization": {
+                "styles": {
+                  "minify": true,
+                  "inlineCritical": false
+                }
+              }
             },
             "development": {
               "optimization": false,

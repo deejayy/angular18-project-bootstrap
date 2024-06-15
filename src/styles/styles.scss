@@ -1,8 +1,15 @@
 @use 'sass:map';
 @import 'app-theme';
+@import 'css-reset';
+@import 'fonts';
+@import 'icons';
 
 body {
   cursor: default;
+  margin: 0;
+  font-family: 'Roboto', 'Helvetica Neue', sans-serif;
+  background-color: var(--mat-app-background-color);
+  color: var(--mat-app-text-color);
 }
 
 a {
