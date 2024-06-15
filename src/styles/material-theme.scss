@@ -1,97 +1,10 @@
 @use 'sass:map';
 @use '@angular/material' as mat;
 
-@import '../../node_modules/modern-css-reset/dist/reset';
+@import 'css-reset';
 @import 'app-theme';
 @import 'fonts';
 @import 'icons';
-
-@include mat.core();
-
-$primary-palette: (
-  50: map.get($theme, 50),
-  100: map.get($theme, 100),
-  200: map.get($theme, 200),
-  300: map.get($theme, 300),
-  400: map.get($theme, 400),
-  500: map.get($theme, 500),
-  600: map.get($theme, 600),
-  700: map.get($theme, 700),
-  800: map.get($theme, 800),
-  900: map.get($theme, 900),
-  contrast: (
-    50: rgba(black, 0.87),
-    100: rgba(black, 0.87),
-    200: rgba(black, 0.87),
-    300: rgba(black, 0.87),
-    400: rgba(black, 0.87),
-    500: rgba(white, 0.92),
-    600: rgba(white, 0.92),
-    700: rgba(white, 0.92),
-    800: rgba(white, 0.92),
-    900: rgba(white, 0.92),
-  ),
-);
-
-$accent-palette: (
-  50: map.get($alt, 50),
-  100: map.get($alt, 100),
-  200: map.get($alt, 200),
-  300: map.get($alt, 300),
-  400: map.get($alt, 400),
-  500: map.get($alt, 500),
-  600: map.get($alt, 600),
-  700: map.get($alt, 700),
-  800: map.get($alt, 800),
-  900: map.get($alt, 900),
-  contrast: (
-    50: rgba(black, 0.87),
-    100: rgba(black, 0.87),
-    200: rgba(black, 0.87),
-    300: rgba(black, 0.87),
-    400: rgba(black, 0.87),
-    500: rgba(black, 0.87),
-    600: rgba(white, 0.92),
-    700: rgba(white, 0.92),
-    800: rgba(white, 0.92),
-    900: rgba(white, 0.92),
-  ),
-);
-
-$project-primary: mat.define-palette($primary-palette);
-$project-accent: mat.define-palette($accent-palette, 300, 100, 400);
-$project-warn: mat.define-palette(mat.$red-palette);
-
-$full-palette: (
-  color: (
-    primary: $project-primary,
-    accent: $project-accent,
-    warn: $project-warn,
-  ),
-);
-
-$project-theme-light: mat.define-light-theme($full-palette);
-$project-theme-dark: mat.define-dark-theme($full-palette);
-
-$light-mode-setup: (
-  color: (
-    foreground: $foreground-light,
-    background: $background-light,
-  ),
-);
-
-$dark-mode-setup: (
-  color: (
-    foreground: $foreground-dark,
-    background: $background-dark,
-  ),
-);
-
-@include mat.all-component-themes(map.deep-merge($project-theme-light, $light-mode-setup));
-
-@media (prefers-color-scheme: dark) {
-  @include mat.all-component-colors(map.deep-merge($project-theme-dark, $dark-mode-setup));
-}
 
 html,
 body {
