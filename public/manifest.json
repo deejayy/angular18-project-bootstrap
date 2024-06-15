@@ -1,0 +1,18 @@
+{
+  "short_name": "Angular 18",
+  "name": "Angular 18 Project Bootstrap",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/?utm_source=launcher",
+  "description": "Angular 18 Project Bootstrap",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#12120A",
+  "categories": ["entertainment", "personalization", "productivity", "utilities"],
+  "theme_color": "#1a8cff"
+}
