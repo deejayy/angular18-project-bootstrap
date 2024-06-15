@@ -48,15 +48,13 @@ By issuing `npm install` in this repo will set the hooks directory to `./git-hoo
 
 ### Material components and palette
 
-Primary and accent palette predefined, base color is coming from scss variables. Check `$theme-color` and `$alt-color` in `app-theme.scss`. Variables are redundant intentionally: `$theme-hue` is actually used in the palette, but `$theme-color` is defined to have a preview in VSCode (it can't calculate scss values yet). Same applies for `$theme-saturation` and similarly to `$alt-*` variables.
-
-In short: `$(theme|alt)-color` is for preview in VSCode, `$(theme|alt)-hue` and `$(theme|alt)-saturation` are used in palette. Make sure you keep them in sync.
+TBD
 
 ### Fonts and icons
 
-Roboto is used, current woff2 files are served from /assets/fonts (in case somebody filters out google domains or blocks cdn behaviour), but only latin and latin-extended character sets. Less-used ones, like greek, cyrillic, vietnamese, etc. are still referenced from Google font CDN.
+Roboto is used, current woff2 files are served from /public/assets/fonts (in case somebody filters out google domains or blocks cdn behaviour), but only latin and latin-extended character sets. Less-used ones, like greek, cyrillic, vietnamese, etc. are still referenced from Google font CDN.
 
-Material icons snapshot is also served from /assets/fonts folder (outlined version).
+Material icons snapshot is also served from /public/assets/fonts folder (outlined version).
 
 To sum it up: your app should work and look fine in a restricted network as well.
 
@@ -64,11 +62,9 @@ To sum it up: your app should work and look fine in a restricted network as well
 
 Present, automatic with media-query. Only drawback is that Material needs a complete duplication of the whole theme in the compiled css bundle, so it doubles the size. This may need revision in the future.
 
-### Reset.css
+### CSS Reset
 
-This is provided by `modern-css-reset` package.
-
-Other than that, custom scrollbars are styled and the ugly yellow-colored autofill is mitigated with a CSS hack.
+A (more) Modern CSS Reset by Andy Bell, updated 2023-09-18.
 
 ### Mixins
 
