@@ -166,7 +166,7 @@ Reactive config aims to elevate the configuration handling to a new level: load 
 
 You can load, reload, get and set whatever properties you want to keep in the configuration.
 
-Check [@deejayy/reactive-config](https://www.npmjs.com/package/) for more info.
+Check [@deejayy/reactive-config](https://www.npmjs.com/package/@deejayy/reactive-config) for more info.
 
 ## Runtime localizer
 
