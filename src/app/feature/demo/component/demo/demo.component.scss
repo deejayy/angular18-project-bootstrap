@@ -56,6 +56,7 @@ section {
   }
 }
 
+/* this approach generates a LOT of css */
 .primary {
   @include mat.button-color($light-theme, $color-variant: primary);
   @include mat.icon-color($light-theme, $color-variant: primary);
