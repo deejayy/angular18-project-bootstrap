@@ -4,10 +4,10 @@
 @use 'sass:map';
 @use '@angular/material' as mat;
 
-$primary: 110deg;
-$secondary: 185deg;
+$primary: 210deg;
+$secondary: 85deg;
 $tertiary: 50deg;
-$warn: 0deg;
+$error: 0deg;
 
 // Note: Color palettes are generated from primary: #3c82c3, secondary: #96cc33, tertiary: #ccb033, neutral: #808080
 $palettes: (
@@ -112,22 +112,22 @@ $palettes: (
     100: hsl($primary, 20%, 100%),
   ),
   error: (
-    0: hsl($warn, 0%, 0%),
-    10: hsl($warn, 100%, 13%),
-    20: hsl($warn, 100%, 21%),
-    25: hsl($warn, 100%, 25%),
-    30: hsl($warn, 100%, 29%),
-    35: hsl($warn, 92%, 34%),
-    40: hsl($warn, 75%, 42%),
-    50: hsl($warn, 73%, 53%),
-    60: hsl($warn, 100%, 64%),
-    70: hsl($warn, 100%, 75%),
-    80: hsl($warn, 100%, 84%),
-    90: hsl($warn, 100%, 92%),
-    95: hsl($warn, 100%, 96%),
-    98: hsl($warn, 100%, 98%),
-    99: hsl($warn, 100%, 99%),
-    100: hsl($warn, 0%, 100%),
+    0: hsl($error, 0%, 0%),
+    10: hsl($error, 100%, 13%),
+    20: hsl($error, 100%, 21%),
+    25: hsl($error, 100%, 25%),
+    30: hsl($error, 100%, 29%),
+    35: hsl($error, 92%, 34%),
+    40: hsl($error, 75%, 42%),
+    50: hsl($error, 73%, 53%),
+    60: hsl($error, 100%, 64%),
+    70: hsl($error, 100%, 75%),
+    80: hsl($error, 100%, 84%),
+    90: hsl($error, 100%, 92%),
+    95: hsl($error, 100%, 96%),
+    98: hsl($error, 100%, 98%),
+    99: hsl($error, 100%, 99%),
+    100: hsl($error, 0%, 100%),
   ),
 );
 

@@ -46,9 +46,11 @@ By issuing `npm install` in this repo will set the hooks directory to `./git-hoo
 
 ## Theme setup
 
-### Material components and palette
+### Material (M3) components and palette
 
-TBD
+Current palette is based on `ng generate @angular/material:m3-theme`, you can find it in `/src/styles/m3-theme.scss`.  
+Feel free to generate another to your needs and replace the existing one, or modify the hue values in the beginning of the file.  
+Working properly with light and dark mode as well.
 
 ### Fonts and icons
 
