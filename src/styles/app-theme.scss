@@ -1,55 +1,22 @@
 @use 'sass:map';
+@use 'm3-theme' as m3;
 @import 'mixins';
-
-$font-color: black;
-
-$theme-color: hsl(209deg, 53%, 50%);
-$theme-hue: 209deg;
-$theme-saturation: 53%;
-
-$alt-color: hsl(81deg, 60%, 50%);
-$alt-hue: 81deg;
-$alt-saturation: 60%;
 
 $grey-saturation: 5%;
 
-$theme: (
-   50: hsl($theme-hue, $theme-saturation, 95%),
-  100: hsl($theme-hue, $theme-saturation, 85%),
-  200: hsl($theme-hue, $theme-saturation, 75%),
-  300: hsl($theme-hue, $theme-saturation, 65%),
-  400: hsl($theme-hue, $theme-saturation, 55%),
-  500: hsl($theme-hue, $theme-saturation, 50%),
-  600: hsl($theme-hue, $theme-saturation, 45%),
-  700: hsl($theme-hue, $theme-saturation, 40%),
-  800: hsl($theme-hue, $theme-saturation, 35%),
-  900: hsl($theme-hue, $theme-saturation, 30%),
-);
-
-$alt: (
-   50: hsl($alt-hue, $alt-saturation, 95%),
-  100: hsl($alt-hue, $alt-saturation, 85%),
-  200: hsl($alt-hue, $alt-saturation, 75%),
-  300: hsl($alt-hue, $alt-saturation, 65%),
-  400: hsl($alt-hue, $alt-saturation, 55%),
-  500: hsl($alt-hue, $alt-saturation, 50%),
-  600: hsl($alt-hue, $alt-saturation, 45%),
-  700: hsl($alt-hue, $alt-saturation, 40%),
-  800: hsl($alt-hue, $alt-saturation, 35%),
-  900: hsl($alt-hue, $alt-saturation, 30%),
-);
+$neutral-palette: map.get(m3.$palettes, neutral-variant);
 
 $grey-palette: (
-   50: hsl($theme-hue, $grey-saturation, 98%),
-  100: hsl($theme-hue, $grey-saturation, 96%),
-  200: hsl($theme-hue, $grey-saturation, 93%),
-  300: hsl($theme-hue, $grey-saturation, 88%),
-  400: hsl($theme-hue, $grey-saturation, 74%),
-  500: hsl($theme-hue, $grey-saturation, 62%),
-  600: hsl($theme-hue, $grey-saturation, 46%),
-  700: hsl($theme-hue, $grey-saturation, 38%),
-  800: hsl($theme-hue, $grey-saturation, 26%),
-  900: hsl($theme-hue, $grey-saturation, 13%),
+   50: map.get($neutral-palette, 100),
+  100: map.get($neutral-palette, 98),
+  200: map.get($neutral-palette, 95),
+  300: map.get($neutral-palette, 90),
+  400: map.get($neutral-palette, 70),
+  500: map.get($neutral-palette, 60),
+  600: map.get($neutral-palette, 50),
+  700: map.get($neutral-palette, 40),
+  800: map.get($neutral-palette, 30),
+  900: map.get($neutral-palette, 10),
 );
 
 $background-light: (
